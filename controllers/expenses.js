@@ -1,4 +1,4 @@
-const Expense = require('../models/Expense');
+const Expense = require('../models/Expense.js');
 
 exports.getExpenses = async (req, res) => {
   try {
