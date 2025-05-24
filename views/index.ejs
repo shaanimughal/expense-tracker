@@ -1,0 +1,37 @@
+<%- include('partials/header') %>
+    <h2>Your Expenses</h2>
+    
+    <% if (expenses.length > 0) { %>
+      <table>
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Amount</th>
+            <th>Type</th>
+            <th>Date</th>
+            <th>Category</th>
+            <th>Description</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% expenses.forEach(expense => { %>
+            <tr>
+              <td><%= expense.title %></td>
+              <td>$<%= expense.amount %></td>
+              <td><%= expense.type %></td>
+              <td><%= expense.date.toDateString() %></td>
+              <td><%= expense.category %></td>
+              <td><%= expense.description %></td>
+              <td>
+                <a href="/edit/<%= expense._id %>">Edit</a>
+                <button onclick="deleteExpense('<%= expense._id %>')">Delete</button>
+              </td>
+            </tr>
+          <% }) %>
+        </tbody>
+      </table>
+    <% } else { %>
+      <p>No expenses found. Add one!</p>
+    <% } %>
+<%- include('partials/footer') %>

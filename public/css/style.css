@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+  }
+  
+  nav a:hover {
+    background: #e8491d;
+  }
+  
+  main {
+    padding: 2rem;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+  }
+  
+  table, th, td {
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    padding: 0.75rem;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f4f4f4;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  form div {
+    margin-bottom: 1rem;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  input, select, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+  }
+  
+  button {
+    background: #35424a;
+    color: #fff;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #e8491d;
+  }
+  
+  .error {
+    color: #e8491d;
+    padding: 0.5rem;
+    background: #ffebee;
+    margin-bottom: 1rem;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: #35424a;
+    color: #ffffff;
+  }
